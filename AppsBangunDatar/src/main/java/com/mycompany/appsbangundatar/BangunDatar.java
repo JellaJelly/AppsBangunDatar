@@ -8,6 +8,22 @@ package com.mycompany.appsbangundatar;
  *
  * @author nazil
  */
-public class BangunDatar {
+abstract class BangunDatar {
+    private String namaBagunDatar;
+
+    public BangunDatar() {
+    }
+
+    public String getNamaBagunDatar() {
+        return namaBagunDatar;
+    }
+
+    public void setNamaBagunDatar(String namaBagunDatar) {
+        this.namaBagunDatar = namaBagunDatar;
+    }
     
+    /* Method untuk menghitung luas bangun datar*/
+    
+    abstract double luas();
+    abstract double keliling();
 }
